@@ -1,0 +1,62 @@
+export type CultivationMode = '2w' | '3w'
+
+// 修炼每级消耗表（人物/宝宝相同口径），按用户提供数据录入
+// exp: 该级所需经验；money: 该级所需金钱（单位：W）；cumMoney: 累计金钱到该级（单位：W）
+export const cultivationPerLevel: Record<CultivationMode, Record<number, { exp: number; money: number; cumMoney: number }>> = {
+  '2w': {
+    1: { exp: 150, money: 30, cumMoney: 30 },
+    2: { exp: 210, money: 42, cumMoney: 72 },
+    3: { exp: 290, money: 58, cumMoney: 130 },
+    4: { exp: 390, money: 78, cumMoney: 208 },
+    5: { exp: 510, money: 102, cumMoney: 310 },
+    6: { exp: 650, money: 130, cumMoney: 440 },
+    7: { exp: 810, money: 162, cumMoney: 602 },
+    8: { exp: 990, money: 198, cumMoney: 800 },
+    9: { exp: 1190, money: 238, cumMoney: 1038 },
+    10: { exp: 1410, money: 282, cumMoney: 1320 },
+    11: { exp: 1650, money: 330, cumMoney: 1650 },
+    12: { exp: 1910, money: 382, cumMoney: 2032 },
+    13: { exp: 2190, money: 438, cumMoney: 2470 },
+    14: { exp: 2490, money: 498, cumMoney: 2968 },
+    15: { exp: 2810, money: 562, cumMoney: 3530 },
+    16: { exp: 3150, money: 630, cumMoney: 4160 },
+    17: { exp: 3510, money: 702, cumMoney: 4862 },
+    18: { exp: 3890, money: 778, cumMoney: 5640 },
+    19: { exp: 4290, money: 858, cumMoney: 6498 },
+    20: { exp: 4710, money: 942, cumMoney: 7440 },
+    21: { exp: 5150, money: 1030, cumMoney: 8740 },
+    22: { exp: 5610, money: 1122, cumMoney: 9592 },
+    23: { exp: 6090, money: 1218, cumMoney: 10810 },
+    24: { exp: 6590, money: 1318, cumMoney: 12128 },
+    25: { exp: 7110, money: 1422, cumMoney: 13550 },
+  },
+  '3w': {
+    1: { exp: 150, money: 45, cumMoney: 45 },
+    2: { exp: 210, money: 63, cumMoney: 108 },
+    3: { exp: 290, money: 87, cumMoney: 195 },
+    4: { exp: 390, money: 117, cumMoney: 312 },
+    5: { exp: 510, money: 153, cumMoney: 465 },
+    6: { exp: 650, money: 195, cumMoney: 660 },
+    7: { exp: 810, money: 243, cumMoney: 903 },
+    8: { exp: 990, money: 297, cumMoney: 1200 },
+    9: { exp: 1190, money: 357, cumMoney: 1557 },
+    10: { exp: 1410, money: 423, cumMoney: 1980 },
+    11: { exp: 1650, money: 495, cumMoney: 2475 },
+    12: { exp: 1910, money: 573, cumMoney: 3048 },
+    13: { exp: 2190, money: 657, cumMoney: 3705 },
+    14: { exp: 2490, money: 747, cumMoney: 4452 },
+    15: { exp: 2810, money: 843, cumMoney: 5295 },
+    16: { exp: 3150, money: 945, cumMoney: 6240 },
+    17: { exp: 3510, money: 1053, cumMoney: 7293 },
+    18: { exp: 3890, money: 1167, cumMoney: 8460 },
+    19: { exp: 4290, money: 1287, cumMoney: 9747 },
+    20: { exp: 4710, money: 1413, cumMoney: 11160 },
+    21: { exp: 5150, money: 1545, cumMoney: 12705 },
+    22: { exp: 5610, money: 1683, cumMoney: 14388 },
+    23: { exp: 6090, money: 1827, cumMoney: 16125 },
+    24: { exp: 6590, money: 1977, cumMoney: 18192 },
+    25: { exp: 7110, money: 2113, cumMoney: 20325 },
+  }
+}
+
+
